@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- No ActionBar since you should be using Toolbar! -->
+    <style name="Theme.WeatherApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/green</item>
+        <!-- TODO: add attributes as needed -->
+    </style>
+</resources>

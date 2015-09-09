@@ -1,0 +1,20 @@
+<resources>
+    <!-- Standard margins/padding/text sizes -->
+    <dimen name="spacing_tiny">1dp</dimen>
+
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_medium_medium">20dp</dimen>
+    <dimen name="spacing_medium_large">24dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+    <dimen name="spacing_xlarge">48dp</dimen>
+    <dimen name="spacing_xhuge">72dp</dimen>
+
+
+    <dimen name="text_size_medium_large">18sp</dimen>
+    <dimen name="text_size_huge">32sp</dimen>
+    <dimen name="text_size_xhuge">48sp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <dimen name="size_icon">128dp</dimen>
+
+</resources>
