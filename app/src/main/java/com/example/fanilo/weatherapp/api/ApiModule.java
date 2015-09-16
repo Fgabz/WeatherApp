@@ -12,6 +12,7 @@ import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
+import java.util.Hashtable;
 
 import dagger.Module;
 import dagger.Provides;
@@ -91,5 +92,11 @@ public class ApiModule {
     @Provides
     @PerApp OpenWeatherApi provideOpenWeatherApi(IOpenWeatherMapApi openWeatherMapApi) {
         return new OpenWeatherApi(openWeatherMapApi);
+    }
+
+    @Provides
+    @PerApp
+    Hashtable<String, String> provideCityMap() {
+        return new Hashtable<>();
     }
 }

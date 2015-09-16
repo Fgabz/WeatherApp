@@ -13,10 +13,19 @@ import android.widget.TextView;
 import com.example.fanilo.weatherapp.R;
 import com.example.fanilo.weatherapp.WeatherApp;
 import com.example.fanilo.weatherapp.api.OpenWeatherApi;
+import com.example.fanilo.weatherapp.data.City;
 import com.example.fanilo.weatherapp.data.ForecastResponse;
-import com.example.fanilo.weatherapp.ui.SearchActivity;
+import com.example.fanilo.weatherapp.ui.Search.SearchActivity;
 import com.example.fanilo.weatherapp.ui.base.BaseActivity;
+import com.google.gson.Gson;
 import com.pnikosis.materialishprogress.ProgressWheel;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -30,9 +39,11 @@ public class MainActivity extends BaseActivity {
     private static final String PLACE = "Paris";
     private static final String LANG = "en";
     private static final String METRIC = "metric";
+    private static final String JSON_FILE = "city.json";
     private static final int DAYS = 5;
 
     @Inject OpenWeatherApi openWeatherApi;
+    @Inject Hashtable<String, String> cityMap;
 
     @Bind(R.id.main_view) CoordinatorLayout rootView;
     @Bind(R.id.error_text) TextView errorText;
@@ -52,10 +63,41 @@ public class MainActivity extends BaseActivity {
 
         if (savedInstanceState == null) {
             apiCall();
+            populateHashTable();
         }
         else {
             progressWheel.setVisibility(View.GONE);
         }
+    }
+
+    private void populateHashTable() {
+        String json;
+        try {
+
+            InputStream is = getAssets().open(JSON_FILE);
+
+            int size = is.available();
+
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+            List<City> cityList= new
+                    ArrayList<City>(Arrays.asList(new Gson().fromJson(json, City[].class)));
+
+            for (int i = 0; i < cityList.size(); i++) {
+                cityMap.put(cityList.get(i).getCityId(), cityList.get(i).getCityName());
+            }
+
+
+
+        } catch (IOException ex) {
+            Timber.e(ex, "issue reading JSON file");
+        }
+
     }
 
     @Override

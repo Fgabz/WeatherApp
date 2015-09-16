@@ -2,144 +2,144 @@
 <items version="2" >
 
     <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.13/b8668706414b5936d38c8a9e4c2be16e3c999c62/rxjava-1.0.13.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-419a702ce372785e9f155f8c008701f68b72a6ca.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/gson-2.3.1-0ed1c0a9ac57f0eac22e151338b1a96cdee8df61.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-a27e458023e2b5eafdabbd68709d1625aed54377.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-e5fc76c2f2b3b4b1656b89a2b1933cbbcc50942b.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.3.0/4f12ec1e1455909e1f0b8530c719c90b2d01745/okhttp-urlconnection-2.3.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="04f12ec1e1455909e1f0b8530c719c90b2d01745">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.3.0-105b485d722dcacbf5bdd9044b93c801000a2424.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/exploded-aar/com.pnikosis/materialish-progress/1.5/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="75c54c470e19b251749e6e6c2cf3d73c0b50aa64">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-10e64019d9419cc2e88a1673078e783b93630d86.jar" />
+        revision="23.0.1"
+        sha1="b8668706414b5936d38c8a9e4c2be16e3c999c62">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/rxjava-1.0.13-839d7a9a1a600de614d9b5ddd5e4a14ec8e26bbc.jar" />
     </item>
     <item
         jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.3.0/1b355f73402020c5a0dcca58affc3ec3dfeabac1/okio-1.3.0.jar"
         jumboMode="false"
-        revision="22.0.1"
+        revision="23.0.1"
         sha1="1b355f73402020c5a0dcca58affc3ec3dfeabac1">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/okio-1.3.0-1ebf83c5f73e6a58bc0e8fc048e12e4082fee06e.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-576b00c29b6eb24e2e3138a6118c60bb69e522ab.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.0.1/1261dfca5bae89a866a2855552da26feab7f8fad/dagger-2.0.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1261dfca5bae89a866a2855552da26feab7f8fad">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/dagger-2.0.1-f00b293ff12642fb99c40a4d83c11efa224d7bfc.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/2.7.1/8fa5f11686c7a44386b41a6890e655cf2b7d5e70/timber-2.7.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8fa5f11686c7a44386b41a6890e655cf2b7d5e70">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/timber-2.7.1-6e5c737c0b5e5eb03c5a30758fc2c9d99b407df3.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.0.3/2b2ec1a0bd113f0ff48151da83d2209ef64ce907/parceler-api-1.0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2b2ec1a0bd113f0ff48151da83d2209ef64ce907">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/parceler-api-1.0.3-3ac28e83299f69b0514d13808a448607ec16cf66.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-10c39600b9e40d387a004f4dd5656d942b7f31fe.jar" />
-    </item>
-    <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/javax.inject-1-ba20efca773c28baefb7940905e968a614c7ad0d.jar" />
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/okio-1.3.0-1ebf83c5f73e6a58bc0e8fc048e12e4082fee06e.jar" />
     </item>
     <item
         jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
         jumboMode="false"
-        revision="22.0.1"
+        revision="23.0.1"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1-101d8e13e963a949d49969f260fd28d98a2ca469.jar" />
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1-101d8e13e963a949d49969f260fd28d98a2ca469.jar" />
     </item>
     <item
-        jar="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jar="/home/fanilo/Projects/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-18aa16f87228553d8d2be45230bd8f428b3e29dd.jar" />
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-951073df58958f431bd8a384e34211fbdb4a2dbb.jar" />
     </item>
     <item
-        jar="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="1821601ddbec5ff125653097812823388700af74">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-606ecb635336dd53f79eb2fa9bf3fc5ec8bc10b9.jar" />
+        revision="23.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-10c39600b9e40d387a004f4dd5656d942b7f31fe.jar" />
     </item>
     <item
-        jar="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jar="/home/fanilo/Projects/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-bd0a7437cc632390470753c8220a85391c25ef33.jar" />
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-ec35d1e29e2627155b98ada9d900bf6c56aeb733.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/2.7.1/8fa5f11686c7a44386b41a6890e655cf2b7d5e70/timber-2.7.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8fa5f11686c7a44386b41a6890e655cf2b7d5e70">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/timber-2.7.1-6e5c737c0b5e5eb03c5a30758fc2c9d99b407df3.jar" />
     </item>
     <item
         jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/io.reactivex/rxandroid/0.25.0/866b539d3ae58abbd47880f243c02f914fec5cda/rxandroid-0.25.0.jar"
         jumboMode="false"
-        revision="22.0.1"
+        revision="23.0.1"
         sha1="866b539d3ae58abbd47880f243c02f914fec5cda">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/rxandroid-0.25.0-01552f2006678d9702b6a11a3d2009fac71ec065.jar" />
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/rxandroid-0.25.0-01552f2006678d9702b6a11a3d2009fac71ec065.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/Projects/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-c6d9775d4dba3868c7dcc9a653066c9df58128dd.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.3.0/4f12ec1e1455909e1f0b8530c719c90b2d01745/okhttp-urlconnection-2.3.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="04f12ec1e1455909e1f0b8530c719c90b2d01745">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.3.0-105b485d722dcacbf5bdd9044b93c801000a2424.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/javax.inject-1-ba20efca773c28baefb7940905e968a614c7ad0d.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.0.3/2b2ec1a0bd113f0ff48151da83d2209ef64ce907/parceler-api-1.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2b2ec1a0bd113f0ff48151da83d2209ef64ce907">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/parceler-api-1.0.3-3ac28e83299f69b0514d13808a448607ec16cf66.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/Projects/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-b0d6867fcf759ed34fa7884d500af1971ec13484.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/Projects/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-fea543f3ecd71f68768db4743e04ef3bdd917d92.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/Projects/WeatherApp/app/build/intermediates/exploded-aar/com.pnikosis/materialish-progress/1.5/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="75c54c470e19b251749e6e6c2cf3d73c0b50aa64">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/classes-f4be46515adb5202de08f9a77f384147ae91f796.jar" />
     </item>
     <item
         jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.3.0/2e7bc7033dc2c8423e661224171b3133fb155b28/okhttp-2.3.0.jar"
         jumboMode="false"
-        revision="22.0.1"
+        revision="23.0.1"
         sha1="2e7bc7033dc2c8423e661224171b3133fb155b28">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/okhttp-2.3.0-9648e33f5c1a8a1b42588b4247e604a364c2178c.jar" />
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/okhttp-2.3.0-9648e33f5c1a8a1b42588b4247e604a364c2178c.jar" />
     </item>
     <item
-        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.13/b8668706414b5936d38c8a9e4c2be16e3c999c62/rxjava-1.0.13.jar"
+        jar="/home/fanilo/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="b8668706414b5936d38c8a9e4c2be16e3c999c62">
-        <dex dex="/home/fanilo/Projects/WeatherApp/WeatherApp/app/build/intermediates/pre-dexed/debug/rxjava-1.0.13-839d7a9a1a600de614d9b5ddd5e4a14ec8e26bbc.jar" />
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-e5fc76c2f2b3b4b1656b89a2b1933cbbcc50942b.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-419a702ce372785e9f155f8c008701f68b72a6ca.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.0.1/1261dfca5bae89a866a2855552da26feab7f8fad/dagger-2.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1261dfca5bae89a866a2855552da26feab7f8fad">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/dagger-2.0.1-f00b293ff12642fb99c40a4d83c11efa224d7bfc.jar" />
+    </item>
+    <item
+        jar="/home/fanilo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/home/fanilo/Projects/WeatherApp/app/build/intermediates/pre-dexed/debug/gson-2.3.1-0ed1c0a9ac57f0eac22e151338b1a96cdee8df61.jar" />
     </item>
 
 </items>

@@ -64,7 +64,4 @@ dependencies {
     //Easier parcelable
     compile "org.parceler:parceler-api:1.0.3"
     apt "org.parceler:parceler:1.0.3"
-    //JSON PARSER
-    apt 'com.bluelinelabs:logansquare-compiler:1.1.0'
-    compile 'com.bluelinelabs:logansquare:1.1.0'
 }
