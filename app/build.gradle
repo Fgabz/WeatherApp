@@ -17,14 +17,14 @@ apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
 
     defaultConfig {
         applicationId "com.example.fanilo.weatherapp"
         minSdkVersion 10
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -40,30 +40,31 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //--Dependency Injector
     apt 'com.google.dagger:dagger-compiler:2.0.1'
-    // Google Support Libraries
-    //View Injector
     //--Image Loading
-    //--RX Java & Android
-    //Timber logs
-    //REST Adapter
-    //Material ProgressBar
-    //Better networking
     compile 'com.google.dagger:dagger:2.0.1'
     // Google Support Libraries
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile 'com.android.support:recyclerview-v7:22.2.1'
-    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.android.support:support-v4:23.0.1'
+    //View Injector
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    //--RX Java & Android
     compile 'io.reactivex:rxjava:1.0.13'
     compile 'io.reactivex:rxandroid:0.25.0'
+    //Timber logs
     compile 'com.jakewharton.timber:timber:2.7.1'
+    //REST Adapter
     compile 'com.squareup.retrofit:retrofit:1.9.0'
     compile 'com.pnikosis:materialish-progress:1.5'
+    //Better networking
     compile 'com.squareup.okhttp:okhttp:2.3.0'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
-    compile 'com.android.support:support-v4:23.0.1'
     //Easier parcelable
     compile "org.parceler:parceler-api:1.0.3"
     apt "org.parceler:parceler:1.0.3"
+    //JSON PARSER
+    apt 'com.bluelinelabs:logansquare-compiler:1.1.0'
+    compile 'com.bluelinelabs:logansquare:1.1.0'
 }

@@ -1,9 +1,11 @@
 package com.example.fanilo.weatherapp.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -12,6 +14,7 @@ import com.example.fanilo.weatherapp.R;
 import com.example.fanilo.weatherapp.WeatherApp;
 import com.example.fanilo.weatherapp.api.OpenWeatherApi;
 import com.example.fanilo.weatherapp.data.ForecastResponse;
+import com.example.fanilo.weatherapp.ui.SearchActivity;
 import com.example.fanilo.weatherapp.ui.base.BaseActivity;
 import com.pnikosis.materialishprogress.ProgressWheel;
 
@@ -69,6 +72,9 @@ public class MainActivity extends BaseActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
+            case R.id.action_search:
+                startActivity(new Intent(this, SearchActivity.class));
+                return true;
         }
         return false;
     }
@@ -103,5 +109,12 @@ public class MainActivity extends BaseActivity {
                         }).show();
                     }
                 }));
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_home, menu);
+        return true;
     }
 }
