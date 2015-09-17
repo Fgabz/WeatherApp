@@ -18,4 +18,10 @@ public class UtilsModule {
     StringUtils provideStringUtils(Context context) {
         return new StringUtils(context);
     }
+
+    @PerApp
+    @Provides
+    MonitoringUtils provideMonitoringUtils(Context context) {
+        return new MonitoringUtils(context);
+    }
 }

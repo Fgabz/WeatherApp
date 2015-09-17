@@ -11,6 +11,7 @@ import android.widget.EditText;
 import com.example.fanilo.weatherapp.R;
 import com.example.fanilo.weatherapp.WeatherApp;
 import com.example.fanilo.weatherapp.ui.base.BaseActivity;
+import com.example.fanilo.weatherapp.utils.MonitoringUtils;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -31,6 +32,7 @@ import timber.log.Timber;
 public class SearchActivity extends BaseActivity implements SearchAdapter.OnClickListner{
 
     @Inject Hashtable<String, String> cityMap;
+    @Inject MonitoringUtils monitoringUtils;
 
     @Bind(R.id.search_input_text) EditText searchInpuText;
     @Bind(R.id.suggestions_list) RecyclerView recyclerView;
@@ -63,6 +65,7 @@ public class SearchActivity extends BaseActivity implements SearchAdapter.OnClic
                 suggestionList.add(s);
                 adapter.addData(suggestionList);
                 recyclerView.setAdapter(adapter);
+
                 recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
             }
         }, new Action1<Throwable>() {
@@ -71,6 +74,7 @@ public class SearchActivity extends BaseActivity implements SearchAdapter.OnClic
                 Timber.e(throwable, "issue while adding city in behaviour subject");
             }
         });
+
     }
 
     private void filterList() {
@@ -82,6 +86,7 @@ public class SearchActivity extends BaseActivity implements SearchAdapter.OnClic
                         adapter.remove(i);
                     }
                 }
+
             }
         }, new Action1<Throwable>() {
             @Override
@@ -93,6 +98,9 @@ public class SearchActivity extends BaseActivity implements SearchAdapter.OnClic
 
 
     private void listenEditText() {
+        monitoringUtils.checkMemoryUsage();
+        monitoringUtils.checkCPU();
+
         WidgetObservable.text(searchInpuText).map(new Func1<OnTextChangeEvent, String>() {
             @Override
             public String call(OnTextChangeEvent onTextChangeEvent) {
@@ -106,29 +114,30 @@ public class SearchActivity extends BaseActivity implements SearchAdapter.OnClic
                 return text.length() >= 4;
             }
         }).subscribe(new Action1<String>() {
-                    @Override
-                    public void call(String text) {
-                        suggestionList.clear();
-                        adapter.notifyDataSetChanged();
-                        for (Map.Entry<String, String> entry : cityMap.entrySet()) {
-                            if (entry.getValue().toLowerCase().contains(text.toLowerCase())) {
-                                citySubject.onNext(entry.getValue());
-                                currentTermSubject.onNext(text.toLowerCase());
-                            }
-                        }
+            @Override
+            public void call(String text) {
+                suggestionList.clear();
+                adapter.notifyDataSetChanged();
+                for (Map.Entry<String, String> entry : cityMap.entrySet()) {
+                    if (entry.getValue().toLowerCase().contains(text.toLowerCase())) {
+                        citySubject.onNext(entry.getValue());
+                        currentTermSubject.onNext(text.toLowerCase());
+                    }
+                }
 
 
-                    }
-                }, new Action1<Throwable>() {
-                    @Override
-                    public void call(Throwable throwable) {
-                        Timber.e(throwable, "issue while populating");
-                    }
-                });
+            }
+        }, new Action1<Throwable>() {
+            @Override
+            public void call(Throwable throwable) {
+                Timber.e(throwable, "issue while populating");
+            }
+        });
 
         searchInJson();
         filterList();
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_home, menu);

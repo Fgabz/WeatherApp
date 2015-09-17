@@ -15,6 +15,7 @@ import com.example.fanilo.weatherapp.WeatherApp;
 import com.example.fanilo.weatherapp.data.Forecast;
 import com.example.fanilo.weatherapp.ui.base.BaseFragment;
 import com.example.fanilo.weatherapp.ui.home.MainActivity;
+import com.example.fanilo.weatherapp.utils.MonitoringUtils;
 import com.example.fanilo.weatherapp.utils.StringUtils;
 import com.squareup.picasso.Picasso;
 
@@ -33,6 +34,7 @@ public class WeatherDetailFragment extends BaseFragment {
 
     @Inject StringUtils stringUtils;
     @Inject Picasso picasso;
+    @Inject MonitoringUtils monitoringUtils;
 
     @Bind(R.id.detail_day) TextView day;
     @Bind(R.id.detail_temperature) TextView temperature;
@@ -60,13 +62,14 @@ public class WeatherDetailFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WeatherApp.get(getContext())
+                .getAppComponent()
+                .inject(this);
         if (getArguments() != null) {
             forecast = Parcels.unwrap(getArguments().getParcelable(ARG_DETAIL_FORECAST));
         }
 
-        WeatherApp.get(getContext())
-                .getAppComponent()
-                .inject(this);
+
     }
 
     @Override
@@ -112,5 +115,6 @@ public class WeatherDetailFragment extends BaseFragment {
         eveningTemperature.setText(stringUtils.temperatureFormat(forecast.getmTemperature().getmEveningTemperature()));
         dayTemperature.setText(stringUtils.temperatureFormat(forecast.getmTemperature().getmAverageTemperature()));
         nightTemperature.setText(stringUtils.temperatureFormat(forecast.getmTemperature().getmNightTemperature()));
+
     }
 }

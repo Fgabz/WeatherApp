@@ -17,13 +17,16 @@ import com.example.fanilo.weatherapp.data.City;
 import com.example.fanilo.weatherapp.data.ForecastResponse;
 import com.example.fanilo.weatherapp.ui.Search.SearchActivity;
 import com.example.fanilo.weatherapp.ui.base.BaseActivity;
+import com.example.fanilo.weatherapp.utils.MonitoringUtils;
 import com.google.gson.Gson;
 import com.pnikosis.materialishprogress.ProgressWheel;
+import com.yozio.android.Yozio;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 
@@ -44,6 +47,7 @@ public class MainActivity extends BaseActivity {
 
     @Inject OpenWeatherApi openWeatherApi;
     @Inject Hashtable<String, String> cityMap;
+    @Inject MonitoringUtils monitoringUtils;
 
     @Bind(R.id.main_view) CoordinatorLayout rootView;
     @Bind(R.id.error_text) TextView errorText;
@@ -62,8 +66,12 @@ public class MainActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         if (savedInstanceState == null) {
+            Yozio.initialize(this);
             apiCall();
             populateHashTable();
+            Intent intent = this.getIntent();
+            HashMap<String, Object> metaData = Yozio.getMetaData(intent);
+            Timber.d("Yozio Data " + metaData.toString());
         }
         else {
             progressWheel.setVisibility(View.GONE);
@@ -73,7 +81,6 @@ public class MainActivity extends BaseActivity {
     private void populateHashTable() {
         String json;
         try {
-
             InputStream is = getAssets().open(JSON_FILE);
 
             int size = is.available();
@@ -84,15 +91,15 @@ public class MainActivity extends BaseActivity {
 
             is.close();
 
+
             json = new String(buffer, "UTF-8");
+
             List<City> cityList= new
                     ArrayList<City>(Arrays.asList(new Gson().fromJson(json, City[].class)));
 
             for (int i = 0; i < cityList.size(); i++) {
                 cityMap.put(cityList.get(i).getCityId(), cityList.get(i).getCityName());
             }
-
-
 
         } catch (IOException ex) {
             Timber.e(ex, "issue reading JSON file");
@@ -129,6 +136,8 @@ public class MainActivity extends BaseActivity {
                         progressWheel.setVisibility(View.GONE);
                         forecastResponses = forecastResponse;
                         errorText.setVisibility(View.GONE);
+
+                        monitoringUtils.checkNetworkUsage();
                         WeatherListFragment weatherListFragment = WeatherListFragment
                                 .newInstance(forecastResponses);
                         getSupportFragmentManager().beginTransaction()
@@ -151,6 +160,9 @@ public class MainActivity extends BaseActivity {
                         }).show();
                     }
                 }));
+
+        monitoringUtils.checkNetworkUsage();
+
     }
 
 
