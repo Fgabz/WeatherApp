@@ -11,5 +11,5 @@ import retrofit.http.Query;
 public interface IOpenWeatherMapApi {
     @GET("/forecast/daily")
     rx.Observable<ForecastResponse> getForecast(@Query("q") String place, @Query("units")
-    String unit, @Query("cnt") int count, @Query("lang") String language);
+    String unit, @Query("cnt") int count, @Query("lang") String language, @Query("APPID") String apiKey);
 }

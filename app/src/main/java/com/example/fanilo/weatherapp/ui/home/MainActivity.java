@@ -44,6 +44,7 @@ public class MainActivity extends BaseActivity {
     private static final String METRIC = "metric";
     private static final String JSON_FILE = "city.json";
     private static final int DAYS = 5;
+    private static final String API_KEY = "4a1ef7eb5e74205d1c670a0bc6985058";
 
     @Inject OpenWeatherApi openWeatherApi;
     @Inject Hashtable<String, String> cityMap;
@@ -129,7 +130,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void apiCall() {
-        bind(openWeatherApi.getForecast(PLACE, METRIC, DAYS, LANG).subscribe(
+        bind(openWeatherApi.getForecast(PLACE, METRIC, DAYS, LANG, API_KEY).subscribe(
                 new Action1<ForecastResponse>() {
                     @Override
                     public void call(ForecastResponse forecastResponse) {
