@@ -10,6 +10,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.WeatherApp" >
+
+        <meta-data android:name="YozioAppKey" android:value="abdc57e8-afa1-4c18-ae6d-6a26603cf484" />
+        <meta-data android:name="YozioSecretKey" android:value="a33d5074-48a7-48fd-af8b-dba001d5d8f4" />
+        <meta-data android:name="YozioNewInstallMetaDataCallback" android:value="com.example.fanilo.weatherapp.yozio.YozioNewInstallMetaDataCallback" />
         <activity
             android:name=".ui.home.MainActivity"
             android:label="@string/app_name" >
@@ -20,9 +24,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.SearchActivity"
+            android:name=".ui.Search.SearchActivity"
             android:label="@string/title_activity_search" >
         </activity>
+
+        <receiver android:name=".yozio.MasterInstallReferrerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

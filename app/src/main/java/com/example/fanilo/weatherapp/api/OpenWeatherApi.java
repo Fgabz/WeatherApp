@@ -17,8 +17,8 @@ public class OpenWeatherApi {
         this.openWeatherMapApi = openWeatherMapApi;
     }
 
-    public rx.Observable<ForecastResponse> getForecast(String place, String unit, int count, String language) {
-        return openWeatherMapApi.getForecast(place, unit, count, language)
+    public rx.Observable<ForecastResponse> getForecast(String place, String unit, int count, String language, String apiKey) {
+        return openWeatherMapApi.getForecast(place, unit, count, language, apiKey)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread());
     }

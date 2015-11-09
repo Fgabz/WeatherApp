@@ -2,6 +2,7 @@ package com.example.fanilo.weatherapp;
 
 import com.example.fanilo.weatherapp.annotation.PerApp;
 import com.example.fanilo.weatherapp.api.ApiModule;
+import com.example.fanilo.weatherapp.ui.Search.SearchActivity;
 import com.example.fanilo.weatherapp.ui.detail.WeatherDetailFragment;
 import com.example.fanilo.weatherapp.ui.home.MainActivity;
 import com.example.fanilo.weatherapp.ui.home.WeatherListFragment;
@@ -28,4 +29,6 @@ public interface WeatherAppComponent {
         void inject(WeatherDetailFragment weatherDetailFragment);
 
         void inject(WeatherListFragment weatherListFragment);
+
+        void inject(SearchActivity searchActivity);
 }

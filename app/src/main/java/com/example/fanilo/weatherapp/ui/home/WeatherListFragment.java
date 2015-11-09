@@ -86,6 +86,7 @@ public class WeatherListFragment extends BaseFragment implements WeatherListAdap
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_weather_list, container, false);
+
         ButterKnife.bind(this, view);
         return view;
     }
